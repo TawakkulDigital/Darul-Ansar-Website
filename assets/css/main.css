@@ -8656,6 +8656,47 @@ input, select, textarea {
 	cursor: pointer;
   }
   
+  /* Default: do nothing special (desktop/laptop remains unchanged) */
+.responsive-image-wrapper {
+	text-align: left;
+  }
+  
+  /* Mobile: center the image */
+  @media (max-width: 768px) {
+	.responsive-image-wrapper {
+	  text-align: center;
+	}
+  
+	.responsive-image-wrapper img {
+	  width: 100%;
+	  height: auto;
+	  max-width: 90%;
+	}
+  }
+
+  /* Mobile devices: force captions to always show */
+@media (max-width: 768px) {
+	.gallery .caption {
+	  opacity: 1 !important;
+	  visibility: visible !important;
+	  transform: none !important;
+	  pointer-events: auto;
+	  position: static;
+	  background: rgba(0, 0, 0, 0.75); /* optional for readability */
+	  color: yellow; /* optional for contrast */
+	  padding: 1rem;
+	  text-align: center;
+	}
+  }
+  
+  .testimonial-img {
+	width: 200px;     /* Adjust to match your desired size */
+	height: 725px;    /* Match the height of your first image */
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+  }
+  
   
   
   
