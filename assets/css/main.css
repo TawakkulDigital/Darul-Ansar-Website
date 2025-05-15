@@ -8696,6 +8696,15 @@ input, select, textarea {
 	display: block;
 	margin: 0 auto;
   }
+
+
+  .flyer-img {
+	width: 600px;     /* Adjust to match your desired size */
+	height: 450px;    /* Match the height of your first image */
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+  }
   
   
   
